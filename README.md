@@ -1,5 +1,15 @@
 # Charla IoT - UTN FRCon 2017
+<!-- TOC -->
 
+- [Charla IoT - UTN FRCon 2017](#charla-iot---utn-frcon-2017)
+    - [Introducción](#introducción)
+    - [Overview](#overview)
+    - [Lista de temas](#lista-de-temas)
+    - [¿Quienes somos?](#¿quienes-somos)
+        - [Juan Blanc](#juan-blanc)
+        - [Dual Giupponi](#dual-giupponi)
+
+<!-- /TOC -->
 ## Introducción
 Arduino, Raspberry Pi, PIC, NodeMCU… Así, cientos de herramientas que nos permiten automatizar procesos y tareas que antes teníamos que revisar o hacer de manera manual. Por ejemplo, cargar un tanque de agua que tenemos en nuestra casa respecto a otro. Esto conlleva a que un sistema se comunique con el otro (para saber cuando el tanque 1 necesita agua, pero también si la que necesita está contenida en el tanque 2 para no quemar la bomba). Si lo anterior, a su vez, lo conectamos a otros sistemas de nuestra casa (automatización de luz según la hora o una orden externa dada por nosotros, lavar ropa automaticamente o proporcionar un comedero para nuestras mascotas) a un servidor para poder acceder a esta información a través de internet, nos topamos claramente con el concepto de Internet of Things (IoT, o internet de las cosas). Pero, ¿Qué es IoT? ¿Para qué sirve? ¿Puedo hacerlo yo? ¿Qué puedo utilizar para hacerlo?, ¿Es lo mismo Arduino que Raspberry Pi?. Estas, junto a otras preguntas, son las primeras que comenzamos a hacer cuando investigamos algo respecto al tema, y es sobre lo que nos queremos enfocar tanto en la charla como en los ejemplos (teóricos y prácticos) que vas a encontrar en esta guía.
 
