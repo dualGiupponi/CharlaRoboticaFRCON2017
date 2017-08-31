@@ -4,8 +4,12 @@ También incluímos los archivos de proyecto para que los puedas importar y modi
 
 ### Como Importar un proyecto .aia ? 
 
-[!](https://www.youtube.com/embed/ybgr-UIx1uU)
+[Importar un proyecto en AI2 ](https://www.youtube.com/embed/ybgr-UIx1uU)
 
 **Recuerda que estos proyectos del MIT App Inventor no tienen finalidad comercial**, aunque pueden ser subidos al Google Play Store para su descarga Gratuita
 
 [Sitio del MIT AppInventor 2](http://ai2.appinventor.mit.edu) 
+
+### Licencia
+
+GNU GENERAL PUBLIC LICENSE
