@@ -4,7 +4,7 @@ También incluímos los archivos de proyecto para que los puedas importar y modi
 
 ### Como Importar un proyecto .aia ? 
 
-[![Test(http://i.imgur.com/7YTMFQp.png)](https://www.youtube.com/embed/ybgr-UIx1uU)
+[!](https://www.youtube.com/embed/ybgr-UIx1uU)
 
 **Recuerda que estos proyectos del MIT App Inventor no tienen finalidad comercial**, aunque pueden ser subidos al Google Play Store para su descarga Gratuita
 
