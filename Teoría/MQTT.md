@@ -15,10 +15,12 @@ Pero si usted sigue hasta ahora la línea de los temas abordados, se dará cuent
 
 ## Introducción
 ![MQTT Logo](http://www.qpcb-design.com/wp-content/uploads/2014/11/MQTT.png)
+
 **MQTT es un protocolo de mensajería de tipo publish/subscribe especialmente diseñado para dispositivos de recursos limitados, redes de gran latencia o no fidedignas.**
 
 ### Publish/Subscribe
 ![Imágen descripción de Publish/Suscribe](http://www.arduinoblocks.com/blog/wp-content/uploads/2017/04/mqtt_publisher_subscriber.png)
+
 El protocolo se basa en el principio de **publicar mensajes en un tema, y luego que otros clientes se suscriban a ese tema**. Esto hace que se pueda desacoplar a un cliente que envía información sobre un tema (llamado editor) de otros clientes que requieren esa información (denominados suscriptores).
 **¿Cómo se logra desacoplar un primer componente cliente (editor) de otros componentes clientes (suscriptores)?** Esto se hace gracias a un tercer componente: **el broker**. Un broker es, en esencia, un servidor que tiene la función primaria de recibir los mensajes de un editor, filtrarlos por temas y luego distribuirlo a todos los suscriptores. Esto permite un **desacoplamiento entre editor y suscriptor, tanto en tiempo como en sincronización (de trabajo)**, haciendo que no sea necesario que se conozcan entre si,aumentando la **escalabilidad** del sistema.
 En un ejemplo práctico, si tenemos dos placas que se comunican entre si mediante otro protocolo, si queremos agregar una tercera seguramente deberíamos modificar el código de las dos primeras para que reconozcan a la tercera. En el caso de MQTT, **nos libramos de esto**, ya que como están conectadas a un broker y postean información a un determinado tema, sólo es necesario suscribir la última placa al tema en cuestión para que pueda empezar a comunicarse. También, permite retirar cualquiera las placas (para mantenimiento, por ejemplo) sin que el flujo de trabajo se encuentre modificado de alguna manera.
