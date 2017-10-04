@@ -26,6 +26,10 @@
             - [Temas que comienzan con $](#temas-que-comienzan-con-)
         - [Mejores prácticas](#mejores-prácticas)
         - [Mensajes de sesión persistente y cola de espera](#mensajes-de-sesión-persistente-y-cola-de-espera)
+            - [Sesión persistente](#sesión-persistente)
+            - [¿Cómo inicializar/finalizar una sesión persistente?](#¿cómo-inicializarfinalizar-una-sesión-persistente)
+            - [¿Cómo sabe el cliente si ya hay una sesión almacenada?](#¿cómo-sabe-el-cliente-si-ya-hay-una-sesión-almacenada)
+            - [Sesión persistente del lado del cliente.](#sesión-persistente-del-lado-del-cliente)
 
 <!-- /TOC -->
 
@@ -164,3 +168,22 @@ Cada tema que comienza con el símbolo $ está reservado para las estadísticas 
 * Utilizar temas especificos en lugar de generales.
 
 ### Mensajes de sesión persistente y cola de espera
+#### Sesión persistente
+Un cliente debe suscribirse en un broker a todos los temas de los cuales está interesado en recibir mensajes. En una reconexión, estos temas se pierden y el cliente debe enviar nuevamente la información indicada primeramente. Este comportamiento es el esperado en una sesión en una sesión sin persistencia. Ahora, si el cliente tiene recursos escasos sería una carga importante suscribirse cada vez que haya una reconexión.
+Una sesión persistente se encarga de guardar toda la información necesaria del cliente en el broker, identificada mediante un *clientId*, que es proporcionado por el cliente al momento de la conexión.
+
+Entonces, **¿Qué se almacenará en la sesión?**
+* **Existencia de una sesión**, incluso si no hay suscripciones.
+* **Todas las suscripciones.**
+* **Todos los mensajes en un flujo de QoS 1 o 2, que no son firmados por el cliente.**
+* **Todos los nuevos mensajes QoS 1 o 2 que el cliente perdió mientras se apagó.**
+* **Todos los mensajes QoS recibidos, que no fueron confirmados por el cliente**
+
+#### ¿Cómo inicializar/finalizar una sesión persistente?
+Una sesión persistente puede ser solicitada por el cliente al momento de pedir una conexión con el broker. El cliente puede controlar si el broker almacena la sesión utilizando el flag cleanSession.
+
+#### ¿Cómo sabe el cliente si ya hay una sesión almacenada?
+Desde la versión 3.1.1, el mensaje CONNACK del broker contiene el indicador de sesión actual, que indica al cliente si hay una sesión disponible en el broker.
+
+#### Sesión persistente del lado del cliente.
+Al igual que el broker, cada cliente debe almacenar una sesión persistente. Por lo tanto, cuando un cliente solicita al servidor que contenga ciertos datos, también tiene la responsabilidad de mantener alguna información por si mismo.
