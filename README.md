@@ -19,7 +19,7 @@ En este repositorio, lo que pretendemos con [juanchip](https://github.com/juanch
 
 ## Lista de temas
 1. [¿Qué es IoT? Introducción al concepto.](./Teoría/Iot.md)
-2. [Arduino vs.  Raspberry Pi / Microcontrolador vs Microprocesador.  ¿Qué es mejor para un proyecto?](./Teoría/RaspberryVsArduino.md)
+2. [Ejemplos varios](./Ejemplos)
 3. [Desde el lado del servidor: Node.JS. Qué es y qué función cumple en nuestro proyecto.](./Teoría/NodeJS.md)
 4. [Comunicación entre el servidor y nuestro Micro: MQTT. Introducción](./Teoría/MQTT.md)
 5. [Integrando NodeJS con Arduino: Johnny Five. Qué es y para qué nos sirve. Ventajas y desventajas.](./Teoría/NodeJS-JhonnyFive.md)
