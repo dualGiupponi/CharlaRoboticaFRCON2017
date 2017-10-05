@@ -26,7 +26,7 @@ En este repositorio, lo que pretendemos con [juanchip](https://github.com/juanch
 
 ## ¿Quienes somos?
 
-![Juan Blanc](https://k61.kn3.net/B/E/1/3/6/C/2DD.png)
+![Juan Blanc](https://k61.kn3.net/B/E/1/3/6/C/2DD.png) 
 
 ### Juan Blanc
 
