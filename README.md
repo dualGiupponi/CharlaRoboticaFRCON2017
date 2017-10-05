@@ -31,10 +31,10 @@ En este repositorio, lo que pretendemos con [juanchip](https://github.com/juanch
 ### Juan Blanc
 
 > Estudiante de Ingenería Electrónica. Cuando tenía dos años, un destornillador cayó en mis manos y desarmaba absolutamente todo lo que tocaba. Mas adelante, Una Colección de la revista Genios (APC Kids) me guió bastante hasta los 14 Años: A raíz de una infección provocada por un Troyano en mi computadora de aquel entonces, decidí emprender un camino de -Ensayo y Error- en esta área. Actualmente estoy trabajando en uno de los Talleres del Museo de Informática de la República Argentina como Reparador/Programador/Desarrollador de equipos informáticos de todas las épocas.
-=======
+
 
 ![Dual Giupponi](./Images/Perfil/Dual.jpeg)
 
 ### Dual Giupponi
 > Estudiante de Ingeniería eléctrica y Tecnicatura Superior en Programación. Empecé por hobbie en la computadora, confundiendo el gabinete con un decodificador gigante y el teclado como un tipo de control remoto alienígena, y de ahí no paré más. Actualmente trabajo como freelance en la parte de desarrollo de NodeJS y colaboro en proyectos (propios o de terceros) con amigos.
-=======
+
